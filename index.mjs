@@ -1,5 +1,5 @@
 /**
- * libsais-wasm - Suffix array based fast substring search
+ * fast-index-of-all - Suffix array based fast substring search
  * 
  * Usage:
  *   import { createIndex, indexOfAll, freeIndex } from './index.mjs';
