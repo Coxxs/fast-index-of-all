@@ -1,0 +1,21 @@
+{
+  "name": "fast-index-of-all",
+  "version": "0.0.2",
+  "description": "A fast indexOfAll using WebAssembly.",
+  "license": "MIT",
+  "author": "Coxxs",
+  "type": "module",
+  "main": "index.mjs",
+  "files": [
+    "build",
+    "index.mjs"
+  ],
+  "scripts": {
+    "build:wasm": "node build.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coxxs/fast-index-of-all.git"
+  }
+}
