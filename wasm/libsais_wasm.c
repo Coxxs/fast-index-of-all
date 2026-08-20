@@ -35,8 +35,8 @@ SaisIndex* create_index(const uint8_t* buffer, int32_t length) {
         return NULL;
     }
     
-    // Build suffix array using libsais (single-threaded)
-    int32_t result = libsais(index->data, index->sa, length, 0, NULL);
+    // Build suffix array using libsais (multi-threaded via OpenMP)
+    int32_t result = libsais_omp(index->data, index->sa, length, 0, NULL, 0);
     if (result != 0) {
         free(index->sa);
         free(index->data);

@@ -24,6 +24,12 @@ const emccFlags = [
     '-O3',
     '-flto',
 
+    // OpenMP / multithreading
+    '-fopenmp',
+    '-pthread',
+    '-sPTHREAD_POOL_SIZE=navigator.hardwareConcurrency',
+    '-DLIBSAIS_OPENMP',
+
     // WASM settings
     '-s WASM=1',
     '-s ALLOW_MEMORY_GROWTH=1',
